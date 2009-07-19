@@ -1,0 +1,6 @@
+<h1><%= @portfolio.title %></h1>
+<h2>Contents</h2>
+<% @portfolio.stocks.each |stock| do %>
+	<%= stock.symbol %>
+<% end %><br /><br />
+<%= link_to "Add stock", :action => 'new', :controller => 'stocks', :portfolio_id => @portfolio.id %>

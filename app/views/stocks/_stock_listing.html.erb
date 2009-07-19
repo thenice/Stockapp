@@ -1,0 +1,7 @@
+<tr id = "stock-<%= stock_listing.key %>">
+	<td id = "stock-<%= stock_listing.key %>-symbol"><%= stock_listing.symbol %></td>
+	<td id = "stock-<%= stock_listing.key %>-price"><%= number_to_currency(stock_listing.price) %></td>
+	<td id = "stock-<%= stock_listing.key %>-quantity"><%= stock_listing.quantity %></td>
+	<td id = "stock-<%= stock_listing.key %>-change"><%= stock_listing.change %></td>
+	<td id = "stock-<%= stock_listing.key %>-value"><%= number_to_currency(stock_listing.price.to_f * stock_listing.quantity.to_f) %></td>
+</tr>

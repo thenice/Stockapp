@@ -1,0 +1,4 @@
+<% @portfolios.each do |portfolio| %>
+	<%= link_to portfolio.title, :controller => 'stocks', :action => 'list', :id => portfolio.key %><br />
+<% end %><br />
+<%= link_to 'New Portfolio', :action => 'new' %>

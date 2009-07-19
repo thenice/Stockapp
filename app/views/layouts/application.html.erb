@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<%= stylesheet_link_tag 'common.css' %>
+		<%= javascript_include_tag :defaults %>
+	</head>
+	<body>
+		<div id = "page_header">Stockapp
+			<div id = "menu">
+				<%= render :partial => 'layouts/login' %>
+			</div>
+		</div>
+		<%= yield %>
+	</body>
+</html>

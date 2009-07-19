@@ -1,0 +1,7 @@
+<h1>Add Stock to <%= @portfolio.title %> <%= @portfolio.id %></h1>
+<% form_for :stock, @stock, :url => { :action => "create", :portfolio_id => @portfolio } do |f| %>
+	Symbol <%= f.text_field :symbol %><br />
+	Buy Price <%= f.text_field :buy_price %><br />
+	Quantity <%= f.text_field :quantity %><br />
+	<%= f.submit "Add Stock" %>
+<% end %>

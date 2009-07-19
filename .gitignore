@@ -1,0 +1,11 @@
+/log/development.log
+/log/production.log
+/log/server.log
+/log/test.log
+/tmp/cache
+/tmp/pids
+/tmp/sessions
+/tmp/sockets
+*.DS_Store
+/tmp/war
+yarbl.war

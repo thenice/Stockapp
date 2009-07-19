@@ -1,0 +1,16 @@
+<div id = "page_title"><%= @portfolio.title %></div>
+Portfolio Value: <%= number_to_currency(portfolio_current_value(@stocks))%><br />
+Portfolio Change: <%= portfolio_gain(@stocks) %><br />
+<table class = "stock_table">
+	<tr class = "head">
+		<td>Symbol</td>
+		<td>Current Price</td>
+		<td>Shares</td>
+		<td>Change</td>
+		<td>Value</td>
+	</tr>
+	<%= render :partial => 'stock_listing', :collection => @stocks %>		
+</table>
+<%= link_to 'Add stock', :action => 'new' %>
+
+<%= periodically_call_remote :url => { :action => 'update', :id => @portfolio.key}, :frequency => 10  %>

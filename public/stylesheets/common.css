@@ -1,0 +1,87 @@
+body {
+	font-size: 10px;
+	font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+	color: #222;
+	margin: 0;
+}
+
+#page_header {
+	word-spacing: 5px;
+	color: white;
+	font-size: 2.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: #b5b6b8;
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+
+#page_title {
+	font-size: 3em;
+	width: 100%;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+#page_header #menu {
+	font-size: .5em;
+	float: right;
+	letter-spacing: 1px;
+	
+}
+
+#page_header #menu a {
+	text-decoration: none;
+}
+
+#page_header #menu a:hover {
+	color: white;
+	background: black;
+}
+
+.stock_table {
+	display: table;
+	width: 100%;
+	font-size: 2em;
+	margin-top: 20px;
+}
+
+.stock_table tr {
+
+}
+
+.stock_table .head {
+	font-weight: bold;
+	background-color: #1bcde6;
+	color: white;
+	font-size: 1.3em;
+	height: 40px;
+	line-height: 40px;
+
+}
+.stock_table td {
+	text-align: left;
+	padding-bottom: 10px;
+	vertical-align:middle;
+	width: 25%;
+	height: 20px;
+	line-height: 20px;
+	padding: 20px;
+}
+
+.add_stock {
+	font-size:  2.5em;
+	height: 30px;
+	width: 60px;
+	line-height: 30px;
+	background: white;
+	border: 1px silver black:
+	font-weight: bold; 
+}
+
+input:focus {
+	background-color: #fffaee;
+}
+

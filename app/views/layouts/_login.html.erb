@@ -1,0 +1,5 @@
+<% if @user %>
+  <%=link_to "logout #{@person.screen_name}", BeeU.logout(request)%>
+<% else %>
+  <%=link_to "Login", BeeU.login(request)%>
+<% end -%>
